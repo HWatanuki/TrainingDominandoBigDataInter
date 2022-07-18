@@ -1,0 +1,51 @@
+﻿EXPORT File_Housing := MODULE
+  EXPORT Layout := RECORD
+		STRING numero_do_contribuinte;
+		STRING ano_do_exercicio;
+		STRING numero_da_nl;
+		STRING data_do_cadastramento;
+		STRING tipo_de_contribuinte_1;
+		STRING cpf_cnpj_do_contribuinte_1;
+		STRING nome_do_contribuinte_1;
+		STRING tipo_de_contribuinte_2;
+		STRING cpf_cnpj_do_contribuinte_2;
+		STRING nome_do_contribuinte_2;
+		STRING numero_do_condominio;
+		STRING codlog_do_imovel;
+		STRING nome_de_logradouro_do_imovel;
+		STRING numero_do_imovel;
+		STRING complemento_do_imovel;
+		STRING bairro_do_imovel;
+		STRING referencia_do_imovel;
+		STRING cep_do_imovel;
+		STRING quantidade_de_esquinas_frentes;
+		STRING fracao_ideal;
+		STRING area_do_terreno;
+		STRING area_construida;
+		STRING area_ocupada;
+		STRING valor_do_m2_do_terreno;
+		STRING valor_do_m2_de_construcao;
+		STRING ano_da_construcao_corrigido;
+		STRING quantidade_de_pavimentos;
+		STRING testada_para_calculo;
+		STRING tipo_de_uso_do_imovel;
+		STRING tipo_de_padrao_da_construcao;
+		STRING tipo_de_terreno;
+		STRING fator_de_obsolescencia;
+		STRING ano_de_inicio_da_vida_do_contribuinte;
+		STRING mes_de_inicio_da_vida_do_contribuinte;
+		STRING fase_do_contribuinte;
+		STRING zona;
+		STRING profundidade_eq;
+		STRING fatordeprof;
+		STRING condominio;
+		STRING fator_terreno;
+		STRING area_exc;
+		STRING construcao;
+		STRING terreno;
+		STRING excesso;
+  END;
+
+  EXPORT File:=DATASET('~Housing.csv',Layout,CSV(HEADING(1)));
+ 
+END;
