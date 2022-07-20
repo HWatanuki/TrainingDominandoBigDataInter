@@ -8,7 +8,7 @@
             "protocol": "http",
             "serverAddress": "52.167.137.162",
             "port": 8010,
-            "targetCluster": "hthor",
+            "targetCluster": "thor",
             "rejectUnauthorized": true,
             "resultLimit": 100,
             "timeoutSecs": 60,
