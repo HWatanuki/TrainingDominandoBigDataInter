@@ -18,11 +18,17 @@ FileRaw := $.File_raw.Dataset_raw;
 // $.File_Lendings.Dataset_Lendings;
 
 //Dataset limpo e com campo aleatório
-OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
-COUNT($.Prep01.myDataE);
+// OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
+// COUNT($.Prep01.myDataE);
 
 //Amostras de treinamento e teste
 // OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
 // COUNT($.Prep01.myTrainData);
 // OUTPUT($.Prep01.myTestData,NAMED('TestData'));
 // COUNT($.Prep01.myTestData);
+
+//Variáveis dependentes e independentes para treinamento e teste em formato data frame
+OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
+OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
+OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
+OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
