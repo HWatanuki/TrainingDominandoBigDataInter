@@ -28,7 +28,11 @@ FileRaw := $.File_raw.Dataset_raw;
 // COUNT($.Prep01.myTestData);
 
 //Variáveis dependentes e independentes para treinamento e teste em formato data frame
-OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
-OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
-OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
-OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
+// OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
+// OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
+// OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
+// OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
+
+// Teste da Função
+$.FN_GetScore(51,130000,23,755,28000,5,0); //961
+$.FN_GetScore(42,40000,23,680,4000,0,0); //862
