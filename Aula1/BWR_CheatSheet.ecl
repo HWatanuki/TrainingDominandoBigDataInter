@@ -1,9 +1,5 @@
 ﻿IMPORT $;
 
-OUTPUT($.File_Housing.File);
-
-
-
 // *****
 // Elementos constituintes basicos da ECL
 // Uma definicao
