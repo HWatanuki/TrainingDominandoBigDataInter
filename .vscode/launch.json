@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "localhost",
+            "name": "TrainingCluster",
             "type": "ecl",
             "request": "launch",
             "protocol": "http",
@@ -13,20 +13,6 @@
             "resultLimit": 100,
             "timeoutSecs": 60,
             "user": "gitpod_user",
-            "password": ""
-        },
-        {
-            "name": "TrainingCluster",
-            "type": "ecl",
-            "request": "launch",
-            "protocol": "http",
-            "serverAddress": "99.79.105.40",
-            "port": 8010,
-            "targetCluster": "thor",
-            "rejectUnauthorized": true,
-            "resultLimit": 100,
-            "timeoutSecs": 60,
-            "user": "hmw",
             "password": ""
         }
     ]
