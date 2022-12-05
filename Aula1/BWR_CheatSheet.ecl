@@ -1,20 +1,18 @@
-﻿IMPORT $;
-
-// *****
+﻿// *****
 // Elementos constituintes basicos da ECL
 // Uma definicao
-Mydef := 'Olá mundo';  // definicao do tipo "value"
+//Mydef := 'Olá mundo';  // definicao do tipo "value"
 
 // Uma acao
-// OUTPUT('Olá mundo');
- output(mydef);
+ OUTPUT('Olá mundo');
+// OUTPUT(mydef);
 
-//*
+/*
 // *****
 // Estruturas de dados basicas em ECL
 // Estrutura RECORD
 rec := RECORD
-	STRING10  Firstname;
+  STRING10  Firstname;
 	STRING    Lastname;
 	STRING1   Gender;
 	UNSIGNED1 Age;
@@ -64,20 +62,20 @@ OUTPUT(ds);
 // *****
 // Transformacoes basicas em ECL
 // Eliminacao de campos desnecessarios
- tbl := TABLE(ds,{Firstname,LastName,Income});
- tbl;
+// tbl := TABLE(ds,{Firstname,LastName,Income});
+// tbl;
 
 // Ordenacao de valores
- sortbl := SORT(tbl,LastName);
- sortbl;
+// sortbl := SORT(tbl,LastName);
+// sortbl;
 
 // Remocao de duplicidades
- dedptbl := DEDUP(sortbl,LastName);
- dedptbl;
+// dedptbl := DEDUP(sortbl,LastName);
+// dedptbl;
 
 
 
-//*
+/*
 // Adicao de campo no dataset
 rec2 := RECORD
   UNSIGNED   recid;  
