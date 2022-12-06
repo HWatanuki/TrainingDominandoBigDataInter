@@ -1,13 +1,13 @@
 ﻿// *****
 // Elementos constituintes basicos da ECL
 // Uma definicao
-//Mydef := 'Olá mundo';  // definicao do tipo "value"
+Mydef := 'Olá mundo';  // definicao do tipo "value"
 
 // Uma acao
- OUTPUT('Olá mundo');
-// OUTPUT(mydef);
+// OUTPUT('Olá mundo');
+OUTPUT(mydef);
 
-/*
+
 // *****
 // Estruturas de dados basicas em ECL
 // Estrutura RECORD
@@ -43,14 +43,14 @@ OUTPUT(ds);
 // recset := ds(IsSeniorMale);
 // recset;
 
-// SetGender := ['M','F'];  //definicao do tipo "set"
-// recset := ds(Gender IN SetGender);
-// recset;						// definição do tipo "recordset"
-// COUNT(recset);    //Equivale a: OUTPUT(COUNT(recset));
+SetGender := ['M','F'];  //definicao do tipo "set"
+recset := ds(Gender IN SetGender);
+recset;						// definição do tipo "recordset"
+COUNT(recset);    //Equivale a: OUTPUT(COUNT(recset));
 
 // rec2 := RECORD
-  // ds.Gender;
-	// cnt := COUNT(GROUP);
+//   ds.Gender;
+// 	cnt := COUNT(GROUP);
 // END;
 
 // crosstab := TABLE(ds,rec2,Gender);
@@ -62,20 +62,20 @@ OUTPUT(ds);
 // *****
 // Transformacoes basicas em ECL
 // Eliminacao de campos desnecessarios
-// tbl := TABLE(ds,{Firstname,LastName,Income});
-// tbl;
+tbl := TABLE(ds,{Firstname,LastName,Income});
+tbl;
 
 // Ordenacao de valores
-// sortbl := SORT(tbl,LastName);
-// sortbl;
+sortbl := SORT(tbl,LastName);
+sortbl;
 
 // Remocao de duplicidades
-// dedptbl := DEDUP(sortbl,LastName);
-// dedptbl;
+dedptbl := DEDUP(sortbl,LastName);
+dedptbl;
 
 
 
-/*
+// /*
 // Adicao de campo no dataset
 rec2 := RECORD
   UNSIGNED   recid;  
@@ -89,10 +89,10 @@ END;
 
 IMPORT STD;
 rec2 MyTransf(rec Le, UNSIGNED cnt) := TRANSFORM
-  SELF.recid:=cnt;
+    SELF.recid:=cnt;
 	SELF.Firstname := STD.Str.ToUpperCase(Le.Firstname);
 	SELF.Lastname := STD.Str.ToUpperCase(Le.LastName);
-  SELF := Le;
+    SELF := Le;
 END;
 
 newds := PROJECT(ds,MyTransf(LEFT,COUNTER));
