@@ -1,17 +1,17 @@
 ﻿IMPORT $, DataPatterns;
 // Browse raw input data
-OUTPUT($.File_Loan_Status.File,NAMED('Property'));
+// OUTPUT($.File_Loan_Status.File,NAMED('Property'));
 // COUNT($.File_Loan_Status.File);
 // Profiling the raw data
-// OUTPUT(DataPatterns.Profile($.File_Property.File,,,,,10));
+OUTPUT(DataPatterns.Profile($.File_Property.File,,,,,10));
 // OUTPUT(DataPatterns.Benford($.File_Property.File,'assessed_value, total_value'));
 // Browse clean input data
 OUTPUT($.Prep01.myDataE,NAMED('CleanProperty'));
 // COUNT($.Prep01.myDataE);
 // Browse clean train data and test data
-// OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
+ OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
 // COUNT($.Prep01.myTrainData);
-// OUTPUT($.Prep01.myTestData,NAMED('TestData'));
+ OUTPUT($.Prep01.myTestData,NAMED('TestData'));
 // COUNT($.Prep01.myTestData);
 // Browse converted train and test data
 // OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
