@@ -1,12 +1,12 @@
 ﻿IMPORT $, DataPatterns;
 // Browse raw input data
-// OUTPUT($.File_Property.File,NAMED('Property'));
-// COUNT($.File_Property.File);
+OUTPUT($.File_Loan_Status.File,NAMED('Property'));
+// COUNT($.File_Loan_Status.File);
 // Profiling the raw data
 // OUTPUT(DataPatterns.Profile($.File_Property.File,,,,,10));
 // OUTPUT(DataPatterns.Benford($.File_Property.File,'assessed_value, total_value'));
 // Browse clean input data
-// OUTPUT($.Prep01.myDataE,NAMED('CleanProperty'));
+OUTPUT($.Prep01.myDataE,NAMED('CleanProperty'));
 // COUNT($.Prep01.myDataE);
 // Browse clean train data and test data
 // OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
