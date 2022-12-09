@@ -14,7 +14,7 @@
 // OUTPUT($.Prep01.myTestData,NAMED('TestData'));
 // COUNT($.Prep01.myTestData);
 // Browse converted train and test data
-// OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
-// OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
-// OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
-// OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
+OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
+OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
+OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
+OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
