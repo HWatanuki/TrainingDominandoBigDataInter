@@ -15,11 +15,11 @@ OUTPUT(FileRaw);
 // OUTPUT(DataPatterns.Profile($.File_Binomial.Dataset_binomial),ALL);
 
 //Dataset filtrado com campos de interesse
-$.File_Lendings.Dataset_Lendings;
+// $.File_Lendings.Dataset_Lendings;
 
 //Dataset limpo e com campo aleatório
-OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
-COUNT($.Prep01.myDataE);
+// OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
+// COUNT($.Prep01.myDataE);
 
 //Amostras de treinamento e teste
 // OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
