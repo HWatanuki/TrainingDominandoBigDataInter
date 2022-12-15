@@ -145,6 +145,6 @@ EXPORT NewLayout := RECORD
     STRING1 debt_settlement_flag;
 END;
 
-EXPORT Dataset_optimized := DATASET('~tarefa::lendingclub::hmw::loan_status_2007-2020q3.csv',NewLayout,CSV(HEADING(1)));
+EXPORT Dataset_optimized := DATASET('~tarefa::lendingclub::hmw::loan_status_2007-2020q3.gzip',NewLayout,CSV(HEADING(1)));
    
 END;

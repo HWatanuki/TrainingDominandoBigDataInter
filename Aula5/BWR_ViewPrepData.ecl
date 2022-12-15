@@ -1,7 +1,8 @@
 ﻿IMPORT $;
 //Browse raw input data
-OUTPUT($.File_Property.File,NAMED('Property'));
-COUNT($.File_Property.File);
+// OUTPUT($.File_Property.File,NAMED('Property'));
+// COUNT($.File_Property.File,NAMED('Property'));
+// COUNT($.File_Property.File);
 
 //Browse clean input data - notice the amount of data that had quality issues
 // OUTPUT($.Prep01.myDataE,NAMED('CleanProperty'));
@@ -22,4 +23,4 @@ COUNT($.File_Property.File);
 // OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
 
 // Teste da Função
-// $.FN_GetPrice(95451,118720,2011,14774,1437,3,2,1,1968); //~130k
+$.FN_GetPrice(95451,118720,2011,14774,1437,3,2,1,1968); //~130k
